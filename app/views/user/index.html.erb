@@ -10,32 +10,30 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-<div class="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>sudo service postgresql start </p>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
-  
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-  </div>
-</div>
-
+<table class="table">
+  <thead>
+    <tr>
+      <td scope="col">NOME : </td>
+      <td scope="col"><%=@user.nome%></td>
+    </tr>
+    <tr>
+      <td scope="col">ENDEREÇO : </td>
+      <td scope="col"><%=@user.endereco%></td>
+    </tr>
+    <tr>
+      <td scope="col">E-MAIL : </td>
+      <td scope="col"><%=@user.email%></td>
+    </tr>
+    <tr>
+      <td scope="col">CPF : </td>
+      <td scope="col"><%=@user.cpf%></td>
+    </tr>
+    <tr>
+      <td scope="col">TELEFONE : </td>
+      <td scope="col"><%=@user.telefone%></td>
+    </tr>
+  </thead>
+</table>
+<a class="btn btn-primary" href="#" role="button">editar</a>
 </body>
 </html>
